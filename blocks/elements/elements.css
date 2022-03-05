@@ -22,6 +22,8 @@
   .elements {
     grid-template-columns: 1fr;
     max-width: 282px;
+    margin: 36px auto 0;
+    gap: 20px 0;
   }
   
 }
