@@ -9,22 +9,25 @@ let professionInput = popup.querySelector(".popup__input_type_profession");
 let profileName = document.querySelector(".profile__name");
 let profileProfession = document.querySelector(".profile__profession");
 
-nameInput.value = profileName.textContent;
-professionInput.value = profileProfession.textContent;
+function openForm() {
+    nameInput.value = profileName.textContent;
+    professionInput.value = profileProfession.textContent;
+    popup.classList.add("popup_open");
+};
+
+function closeForm() {
+    popup.classList.remove("popup_open");
+};
 
 function formSubmitHandler (evt) {
     evt.preventDefault();
     profileName.textContent = nameInput.value;
     profileProfession.textContent = professionInput.value;
-    popup.classList.remove("popup_open");
+    closeForm();
 };
 
-openPopup.addEventListener("click", function() {
-    popup.classList.add("popup_open");
-} );
+openPopup.addEventListener("click", openForm);
 
-closePopup.addEventListener("click", function() {
-    popup.classList.remove("popup_open");
-} );
+closePopup.addEventListener("click", closeForm);
 
-formElement.addEventListener('submit', formSubmitHandler);
+formElement.addEventListener("submit", formSubmitHandler);
