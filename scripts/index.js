@@ -132,6 +132,7 @@ function deleteCard(cardElement) {
 //  Функции открытия и закрытия увеличенного изображения карточки  //
 function scaleCard(event){
   scaleImage.querySelector(".popup-scale__image").src = event.currentTarget.src;
+  scaleImage.querySelector(".popup-scale__image").alt = event.currentTarget.alt;
   scaleImage.querySelector(".popup-scale__title").textContent = event.currentTarget.parentNode.textContent;
   scaleImage.classList.add("popup_open");
 };
