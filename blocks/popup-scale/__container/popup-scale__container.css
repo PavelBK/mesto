@@ -1,6 +1,5 @@
-.element {
+.popup-scale__container {
   display: flex;
   flex-direction: column;
-  background-size: cover;
   position: relative;
 }
