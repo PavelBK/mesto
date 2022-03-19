@@ -1,6 +1,8 @@
 .page {
+  height: 100vh;
   background-color: rgba(0, 0, 0, 1);
   margin: 0 auto;
+  background-position: 100%;
   font-family: 'Inter', 'Arial', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
